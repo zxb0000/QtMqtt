@@ -51,7 +51,14 @@
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="QLineEdit" name="host"/>
+            <widget class="QLineEdit" name="host">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>127.0.0.1</string>
+             </property>
+            </widget>
            </item>
            <item row="1" column="0">
             <widget class="QLabel" name="label_6">
@@ -63,7 +70,16 @@
            <item row="1" column="1">
             <widget class="QLineEdit" name="port">
              <property name="inputMask">
-              <string>00000</string>
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="cursorPosition">
+              <number>0</number>
+             </property>
+             <property name="placeholderText">
+              <string>1883</string>
              </property>
             </widget>
            </item>
@@ -80,7 +96,7 @@
            <item row="3" column="1">
             <widget class="QLineEdit" name="username">
              <property name="placeholderText">
-              <string>选填</string>
+              <string>test</string>
              </property>
             </widget>
            </item>
@@ -93,8 +109,11 @@
            </item>
            <item row="4" column="1">
             <widget class="QLineEdit" name="password">
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
              <property name="placeholderText">
-              <string>选填</string>
+              <string>1234</string>
              </property>
             </widget>
            </item>
@@ -130,6 +149,12 @@
         <widget class="QPushButton" name="pushButton_2">
          <property name="text">
           <string>连接</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
