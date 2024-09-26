@@ -25,6 +25,8 @@ private slots:
     void onDisconnected();
     void on_pushButton_2_clicked(bool checked);
 
+    void on_send_clicked();
+
 private:
     Ui::MainWindow *ui;
     QMqttClient* client;
