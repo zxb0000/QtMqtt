@@ -24,6 +24,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(station-control-simulation
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        res/res.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET station-control-simulation APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

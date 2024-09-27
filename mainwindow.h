@@ -4,7 +4,11 @@
 #include <QMainWindow>
 
 #include <QtMqtt/QMqttClient>
-
+#include<QFileDialog>
+#include<QFile>
+#include<QMessageBox>
+#include<QJsonDocument>
+#include<QJsonObject>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -26,6 +30,10 @@ private slots:
     void on_pushButton_2_clicked(bool checked);
 
     void on_send_clicked();
+
+    void on_action_triggered();
+
+    void on_action_2_triggered();
 
 private:
     Ui::MainWindow *ui;

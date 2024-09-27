@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>361</height>
+    <width>760</width>
+    <height>487</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -121,6 +121,48 @@
             <widget class="QLabel" name="label_9">
              <property name="text">
               <string>密码</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string>预约回复</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="text">
+              <string>PushButton</string>
              </property>
             </widget>
            </item>
@@ -278,7 +320,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
+     <width>760</width>
      <height>21</height>
     </rect>
    </property>
@@ -286,8 +328,10 @@
     <property name="title">
      <string>菜单</string>
     </property>
-    <addaction name="action"/>
+    <addaction name="action_2"/>
     <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -295,6 +339,11 @@
   <action name="action">
    <property name="text">
     <string>退出</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>导入配置</string>
    </property>
   </action>
  </widget>

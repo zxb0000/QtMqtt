@@ -125,3 +125,35 @@ void MainWindow::on_send_clicked()
     ui->text1->appendPlainText("You Message To: "+s+" Time "+QTime::currentTime().toString()+"\n"+msg);
 }
 
+
+void MainWindow::on_action_triggered()
+{
+    this->close();
+}
+
+
+void MainWindow::on_action_2_triggered()
+{
+   QString s= QFileDialog::getOpenFileName(this);
+    if(!(s.isEmpty()||s.isNull())){
+        QFile file(s);
+        bool b= file.open(QIODevice::OpenModeFlag::ReadOnly);
+        if(!b){
+            QMessageBox::warning(this,"打开文件失败","打开文件失败");
+            return;
+        }
+        QByteArray f= file.readAll();
+        QJsonParseError erro;
+        QJsonDocument doc=QJsonDocument::fromJson(f,&erro);
+        if(doc.isNull()){
+            QMessageBox::warning(this,"解析Json失败","解析json错误："+erro.errorString());
+            return;
+        }
+
+
+
+
+
+   }
+}
+

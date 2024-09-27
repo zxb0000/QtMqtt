@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>windIcon.jpg</file>
+    </qresource>
+</RCC>
