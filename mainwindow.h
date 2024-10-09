@@ -9,6 +9,9 @@
 #include<QMessageBox>
 #include<QJsonDocument>
 #include<QJsonObject>
+#include<QDebug>
+#include"mqttconfig.h"
+#include<QSplitter>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -35,9 +38,10 @@ private slots:
 
     void on_action_2_triggered();
 
+
+
 private:
     Ui::MainWindow *ui;
     QMqttClient* client;
-
 };
 #endif // MAINWINDOW_H
