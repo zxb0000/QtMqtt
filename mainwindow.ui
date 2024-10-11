@@ -207,19 +207,22 @@
               <enum>QLayout::SetFixedSize</enum>
              </property>
              <property name="horizontalSpacing">
-              <number>0</number>
+              <number>4</number>
              </property>
              <property name="verticalSpacing">
-              <number>0</number>
+              <number>4</number>
              </property>
              <property name="leftMargin">
-              <number>0</number>
+              <number>4</number>
+             </property>
+             <property name="topMargin">
+              <number>4</number>
              </property>
              <property name="rightMargin">
-              <number>0</number>
+              <number>4</number>
              </property>
              <property name="bottomMargin">
-              <number>0</number>
+              <number>4</number>
              </property>
              <item row="1" column="0">
               <widget class="QLabel" name="label_10">
@@ -270,7 +273,18 @@
                </property>
               </spacer>
              </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="checkBox">
+               <property name="text">
+                <string>自动回复</string>
+               </property>
+              </widget>
+             </item>
             </layout>
+            <zorder>checkBox</zorder>
+            <zorder>label_10</zorder>
+            <zorder>lineEdit_9</zorder>
+            <zorder>pushButton</zorder>
            </widget>
           </item>
           <item>

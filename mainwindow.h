@@ -13,7 +13,10 @@
 #include"mqttconfig.h"
 #include<QSplitter>
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui
+{
+    class MainWindow;
+}
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -36,6 +39,10 @@ private slots:
 
     void on_action_triggered();
 
+    /**
+     * 配置文件解析
+     * @brief MainWindow::on_action_2_triggered
+     */
     void on_action_2_triggered();
 
 

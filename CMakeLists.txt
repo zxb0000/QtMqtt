@@ -5,7 +5,6 @@ project(station-control-simulation VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -18,8 +17,8 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        rec.rc
 )
-
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(station-control-simulation
         MANUAL_FINALIZATION
@@ -27,7 +26,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         res/res.qrc
         mqttconfig.h
         mqttconfig.cpp
-
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET station-control-simulation APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -46,7 +44,6 @@ else()
         )
     endif()
 endif()
-
 target_link_libraries(station-control-simulation PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(station-control-simulation PRIVATE Qt6::Mqtt)
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
@@ -73,4 +70,3 @@ install(TARGETS station-control-simulation
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(station-control-simulation)
 endif()
-
